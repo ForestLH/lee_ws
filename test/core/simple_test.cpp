@@ -3,6 +3,6 @@
 
 namespace lee_ws {
 TEST(EXAMPLE, hello) {
-    Hello();
+  std::cout << "hello" << std::endl;
 }
 }
