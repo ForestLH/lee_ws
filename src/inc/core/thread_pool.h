@@ -1,5 +1,6 @@
 #pragma once
 #include <future>
+#include <iostream>
 #include <queue>
 #include "thread"
 #include "utils.h"
@@ -30,7 +31,7 @@ class ThreadPool {
 
 template <typename F, typename... Args>
 auto ThreadPool::SubmitTask(F &&new_task, Args &&...args) -> decltype(auto)  {
-  using return_type = std::invoke_result_t<F, Args...>;
+  using return_type = std::invoke_result_t<F, Args...>; // 得到任务的返回值类型
   if (exit_) {
     throw std::runtime_error("Thread pool SubmitTask called while exited");
   }

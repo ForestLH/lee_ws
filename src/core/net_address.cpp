@@ -1,5 +1,4 @@
 #include "core/net_address.h"
-#include <sys/_endian.h>
 #include <algorithm>
 #include <cstring>
 #include <exception>

@@ -3,6 +3,7 @@
 #include "sys/socket.h"
 #include <unistd.h>
 #include <cassert>
+#include <stdexcept>
 
 namespace lee_ws {
 

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.23)
+cmake_minimum_required(VERSION 3.22)
 
 file(GLOB_RECURSE LEE_WS_TEST_SOURCES "${PROJECT_SOURCE_DIR}/test/*/*test.cpp")
 find_package(GTest REQUIRED)

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.23)
+cmake_minimum_required(VERSION 3.22)
 file(GLOB_RECURSE example_files ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
 
 foreach(example_file ${example_files})

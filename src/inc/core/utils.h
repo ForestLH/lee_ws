@@ -1,7 +1,7 @@
-#include <utility>
-
 #pragma once
 
+#include <utility>
+#include <functional>
 
 namespace lee_ws {
 

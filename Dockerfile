@@ -4,6 +4,11 @@ CMD bash
 # Install Ubuntu packages.
 # Please add packages in alphabetical order.
 ARG DEBIAN_FRONTEND=noninteractive
+ENV MYPATH /lee_ws
+WORKDIR $MYPATH
+COPY . .
+VOLUME ["/lee_ws"]
+EXPOSE 8000
 RUN apt-get -y update && \
     apt-get -y install \
       build-essential \
@@ -13,6 +18,4 @@ RUN apt-get -y update && \
       cmake \
       doxygen \
       git \
-      g++-12 \
-      pkg-config \
-      zlib1g-dev
+      g++-12
